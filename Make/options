@@ -1,0 +1,17 @@
+EXE_INC = \
+    -I$(LIB_SRC)/finiteVolume/lnInclude \
+    -I$(LIB_SRC)/transportModels \
+    -I$(LIB_SRC)/transportModels/incompressible/lnInclude \
+    -I$(LIB_SRC)/finiteVolume/lnInclude \
+    -I$(LIB_SRC)/lagrangian/basic/lnInclude \
+    -I$(LIB_SRC)/lagrangian/solidParticle/lnInclude \
+    -I$(LIB_SRC)/meshTools/lnInclude \
+    -I../MysolidParticle/lnInclude
+EXE_LIBS = \
+    -lfiniteVolume \
+    -lincompressibleTransportModels \
+    -L$(FOAM_USER_LIBBIN) \
+    -lfiniteVolume \
+    -llagrangian \
+    -lsolidParticle \
+    -lMysolidParticle
